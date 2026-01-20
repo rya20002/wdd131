@@ -1,59 +1,99 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #1f1f1f;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
 }
+
 .card {
-    width: 650px;
-    margin: 60px auto;
-    padding: 65px 85px 60px;
-    border: 1px solid #d7d7d7;
+  width: 650px;
+  margin: 60px auto;
+  padding: 65px 85px 60px;
+  border: 1px solid black;
 }
+
 header {
-    text-align:center;
+  text-align: center;
 }
+
 header h1 {
-    font-size: 26px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 header h2 {
-    margin-top: 10px;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #2f5f9d;
-    font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #2f5f9d;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 hr {
-    width: 85%;
-    margin: 15px auto 25px;
-    border: none;
-    border-top: 1px solid #e6e6e6;
+  width: 85%;
+  margin: 15px auto 25px;
+  border: none;
+  border-top: 1px solid white;
 }
-p,p1 {
-    display: block;
-    font-size: 13px;
-    line-height: 1.6;
-    margin: 0 auto 15px;
-    max-width: 440px;
+
+p {
+  display: block;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 auto 15px;
+  max-width: 440px;
 }
+
 .startlist {
-    font-style: italic;
-    font-weight: bold;
+  font-style: italic;
+  font-weight: bold;
 }
+
 ol {
-    max-width: 440px;
-    margin: 0 auto;
-    padding-left: 28px;
-    font-size: 13px;
+  max-width: 440px;
+  margin: 0 auto;
+  padding-left: 28px;
+  font-size: 13px;
 }
+
 li {
-    margin-bottom: 14px;
-    padding-left: 6px;
+  margin-bottom: 14px;
+  padding-left: 6px;
 }
+
 img {
-    display: block;
-    width: 120px;
-    margin: 35px auto 0;
+  display: block;
+  width: 120px;
+  margin: 35px auto 0;
+}
+
+/* Theme selector */
+.modeSelector {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+}
+
+.modeSelector select {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+body.dark .card {
+  border-color: darkslategray;
+}
+
+body.dark hr {
+  border-top: 1px solid darkslategray;
+}
+
+body.dark header h2 {
+  color: #9bbcf0;
 }
