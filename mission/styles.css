@@ -1,0 +1,59 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1f1f1f;
+}
+.card {
+    width: 650px;
+    margin: 60px auto;
+    padding: 65px 85px 60px;
+    border: 1px solid #d7d7d7;
+}
+header {
+    text-align:center;
+}
+header h1 {
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header h2 {
+    margin-top: 10px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #2f5f9d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr {
+    width: 85%;
+    margin: 15px auto 25px;
+    border: none;
+    border-top: 1px solid #e6e6e6;
+}
+p,p1 {
+    display: block;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 auto 15px;
+    max-width: 440px;
+}
+.startlist {
+    font-style: italic;
+    font-weight: bold;
+}
+ol {
+    max-width: 440px;
+    margin: 0 auto;
+    padding-left: 28px;
+    font-size: 13px;
+}
+li {
+    margin-bottom: 14px;
+    padding-left: 6px;
+}
+img {
+    display: block;
+    width: 120px;
+    margin: 35px auto 0;
+}
