@@ -41,6 +41,9 @@ header nav a {
     font-size:1em;
     text-decoration: underline;
 }
+.hide {
+    display:none;
+}
 .page {
     max-width:980px;
     margin:0 auto;
@@ -104,10 +107,7 @@ dialog {
     }
 }
 
-@media (min-width:1000px){
-    .menu {
-        display: none;
-    }
+@media (min-width:1000px) {
     header nav {
         display:flex;
         justify-content:center;
