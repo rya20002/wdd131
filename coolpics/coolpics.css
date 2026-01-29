@@ -117,6 +117,9 @@ dialog {
         justify-content:center;
         gap: 16px;
     }
+    header nav.show{
+        flex-direction: row;
+    }
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
