@@ -31,10 +31,11 @@ modal.addEventListener('click', (event) => {
     }
 });
 
-const menu = document.querySelector('nav');
+const btn = document.querySelector('.menu')
+const menu = document.querySelector('header nav');
 
 btn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-    menu.classList.toggle('hide');
+    menu.classList.toggle('show');
 }
