@@ -29,11 +29,8 @@ body {
 header nav {
   display: none;
   gap: 16px;
-  text-decoration:none;
+  text-decoration:underline;
   justify-content: center;
-}
-header nav:hover {
-    text-decoration:underline;
 }
 header nav a {
     color:white;
@@ -116,6 +113,7 @@ dialog {
     }
     header nav {
         display:flex;
+        flex-direction: row;
         justify-content:center;
         gap: 16px;
     }
