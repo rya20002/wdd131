@@ -1,4 +1,4 @@
-const btn = document.querySelector('menu-btn');
+const btn = document.querySelector('.menu-btn');
 const menu = document.querySelector('nav');
 
 btn.addEventListener('click', toggleMenu);
