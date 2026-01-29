@@ -82,7 +82,6 @@ footer {
 
 @media screen and (min-width: 1000px){
     main {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }   
