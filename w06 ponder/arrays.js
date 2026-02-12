@@ -98,6 +98,6 @@ students.forEach(function(item){
         <span>${item.first}</span>
         <span>${item.last}</span>`
 
-    name.innerHtml=html;
+    name.innerHTML=html;
     container.appendChild(name);
 })
