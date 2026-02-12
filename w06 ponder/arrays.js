@@ -20,7 +20,7 @@ function listTemplate(item){
     return `<li>${item}</li>`;
 };
 
-myList.innerHtml = stepsHtml.join('');
+myList.innerHTML=stepsHtml.join('');
 
 let grades = ['A','B','C'];
 let points;
