@@ -38,7 +38,12 @@ header h1::after {
   border-top: 1px solid var(--orange);
   margin: 10px 8px 0;
 }
-
+main{
+  width:min(760px,92vw);
+  margin:0 auto;
+  border-left:2px solid var(--frame);
+  border-right:2px solid var(--frame);
+}
 .main-nav{
   list-style: none;
   margin: 10px 0 0;
@@ -76,8 +81,8 @@ nav::after{
 .book{
   width: min(760px, 92vw);
   margin: 0 auto;
-  border-left: 2px solid var(--frame);
-  border-right: 2px solid var(--frame);
+  /*border-left: 2px solid var(--frame);
+  border-right: 2px solid var(--frame);*/
   padding: 14px 14px 0;
   display: grid;
   grid-template-columns: 1fr 170px;
@@ -108,18 +113,18 @@ nav::after{
   font-size: 1rem;
   text-align: left;
   padding: 0 10px;
-  text-decoration:bold;
   font-size:1rem;
 }
 
 .author{
   grid-column: 1 / -1;
   grid-row:5;
-  margin: 0 20px 12px;
+  margin: 12px 14px 0;
   font-size: 0.72rem;
   text-align: center;
   padding-top:10px;
   border-top:1px solid var(--orange);
+  border-bottom:1px solid var(--orange);
 }
 
 
@@ -204,5 +209,6 @@ footer{
     text-align: center;
     margin-top: 8px;
     border-top:1px solid var(--orange);
+    border-bottom:1px solid var(--orange);
   }
 }
