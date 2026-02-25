@@ -28,7 +28,7 @@ document.querySelector('img').setAttribute('src', aCourse.logo);
 document.querySelector('img').setAttribute('alt', aCourse.name);
 document.querySelector('img').style.width='100px';
 
-console.lot(aCourse.sections[0].roomNum);
+console.lot(aCourse.sections[1].roomNum);
 
 function sectionTemplate(section) {
     return `<tr>
