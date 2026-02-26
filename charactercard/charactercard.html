@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Character Card | Swamp Beast Diplomat</title>
+  <meta name="description" content="A character card demo using a JavaScript object with properties and methods." />
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Character Card | Swamp Beast Diplomat">
+  <meta property="og:description" content="A character card demo using a JavaScript object with properties and methods.">
+  <meta property="og:url" content="https://yourURLofPage.here/charactercard/">
+  <meta property="og:image" content="https://yourURLofPage.here/charactercard/images/social-preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Character Card | Swamp Beast Diplomat">
+  <meta name="twitter:description" content="A character card demo using a JavaScript object with properties and methods.">
+  <meta name="twitter:image" content="https://yourURLofPage.here/charactercard/images/social-preview.png">
+
+  <!-- One favicon (ICO works everywhere) -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- One Apple Touch Icon (iOS home screen) -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="charactercard.css" />
+  <script src="charactercard.js" defer></script>
+</head>
+
+<body>
+  <main class="card" aria-labelledby="charName">
+    <img class="image" id="charImage" src="snortleblat.webp" alt="Snortleblat portrait">
+
+    <h1 class="name" id="charName">Swamp Beast Diplomat</h1>
+
+    <section class="stats" aria-label="Character stats">
+      <p><strong>Class:</strong> <span id="charClass"></span></p>
+      <p><strong>Level:</strong> <span id="charLevel"></span></p>
+      <p><strong>Health:</strong> <span id="charHealth"></span></p>
+    </section>
+
+    <section class="buttons" aria-label="Actions">
+      <button type="button" id="attackBtn">Attacked</button>
+      <button type="button" id="levelUpBtn">Level Up</button>
+    </section>
+
+    <p id="message" class="message" aria-live="polite"></p>
+  </main>
+</body>
+</html>
