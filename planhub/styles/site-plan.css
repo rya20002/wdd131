@@ -1,0 +1,143 @@
+:root {
+  --cream: #faf7f2;
+  --gray: #e5e1dc;
+  --sage: #a8b5a0;
+  --bluegray: #a3b4c2;
+  --brown: #4b3b34;
+  --charcoal: #2f2a28;
+  --white: #fffdf9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--cream);
+  color: var(--charcoal);
+  line-height: 1.7;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(to bottom, var(--gray), var(--cream));
+  padding: 3rem 1rem 2rem;
+  border-bottom: 1px solid rgba(75, 59, 52, 0.12);
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.8rem;
+  color: var(--brown);
+}
+
+header p {
+  margin-top: 0.5rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+main {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+section {
+  background: var(--white);
+  border: 1px solid rgba(75, 59, 52, 0.08);
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 24px rgba(47, 42, 40, 0.05);
+}
+
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--brown);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.logo-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.2rem;
+  background: var(--cream);
+  border-radius: 999px;
+  border: 1px solid rgba(75, 59, 52, 0.08);
+}
+
+.logo-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brown);
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+}
+
+.swatch {
+  height: 110px;
+  border-radius: 18px;
+  border: 1px solid rgba(75, 59, 52, 0.08);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 0.75rem;
+  font-weight: 600;
+}
+
+.swatch span {
+  background: rgba(255, 255, 255, 0.82);
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.cream { background: #faf7f2; }
+.gray { background: #e5e1dc; }
+.sage { background: #a8b5a0; }
+.bluegray { background: #a3b4c2; }
+.brown { background: #4b3b34; }
+.charcoal { background: #2f2a28; color: #fff; }
+
+ul {
+  padding-left: 1.2rem;
+}
+
+code {
+  background: var(--gray);
+  padding: 0.12rem 0.3rem;
+  border-radius: 6px;
+}
+
+@media (min-width: 700px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
