@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlanHub | Events</title>
+  <meta
+    name="description"
+    content="Keep track of upcoming events, important dates, and weekly plans with PlanHub."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script defer src="scripts/events.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="PlanHub home">
+        <span class="logo-mark">✦</span>
+        <span>PlanHub</span>
+      </a>
+
+      <nav class="site-nav desktop-only-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html" aria-current="page">Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container page-main">
+    <section class="page-hero">
+      <p class="eyebrow">planning ahead</p>
+      <h1>Upcoming Events</h1>
+      <p class="hero-copy">
+        Keep track of important dates, school deadlines, church plans, personal events,
+        and anything else coming up in your life.
+      </p>
+    </section>
+
+    <section class="events-summary page-grid">
+      <article class="card page-card stat-card">
+        <h2>Total Events</h2>
+        <p><strong id="total-events">0</strong> planned</p>
+      </article>
+
+      <article class="card page-card stat-card">
+        <h2>Next Event</h2>
+        <p id="next-event">No upcoming events yet.</p>
+      </article>
+
+      <article class="card page-card stat-card">
+        <h2>This Week</h2>
+        <p><strong id="week-events">0</strong> events in the next 7 days</p>
+      </article>
+    </section>
+
+    <section class="split-layout events-layout">
+      <div>
+        <div class="section-heading">
+          <p class="eyebrow">add an event</p>
+          <h2>Life planner</h2>
+          <p class="section-copy">
+            Add your upcoming plans and keep everything organized in one place.
+          </p>
+        </div>
+
+        <form id="event-form" class="card page-card stack-form">
+          <label for="event-title">Event title</label>
+          <input
+            id="event-title"
+            name="event-title"
+            type="text"
+            placeholder="Example: SQL Exam 3"
+            required
+          />
+
+          <label for="event-date">Date</label>
+          <input
+            id="event-date"
+            name="event-date"
+            type="date"
+            required
+          />
+
+          <label for="event-time">Time</label>
+          <input
+            id="event-time"
+            name="event-time"
+            type="time"
+          />
+
+          <label for="event-category">Category</label>
+          <select id="event-category" name="event-category">
+            <option value="School">School</option>
+            <option value="Church">Church</option>
+            <option value="Personal">Personal</option>
+            <option value="Family">Family</option>
+            <option value="Work">Work</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="event-notes">Notes</label>
+          <input
+            id="event-notes"
+            name="event-notes"
+            type="text"
+            placeholder="Optional details..."
+          />
+
+          <button type="submit" class="button">Add Event</button>
+        </form>
+      </div>
+
+      <aside class="card side-note page-card">
+        <h2>Ideas for this page</h2>
+        <p>
+          Track assignment due dates, presentations, family plans, church activities,
+          appointments, or weekend events.
+        </p>
+        <p>
+          This page keeps your planner simple and still fits the calm, organized style
+          of PlanHub.
+        </p>
+      </aside>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">your schedule</p>
+        <h2>Saved events</h2>
+        <p class="section-copy">
+          Your events will appear here in date order.
+        </p>
+      </div>
+
+      <div id="event-list" class="event-list"></div>
+    </section>
+
+    <section class="card page-card closing-card">
+      <h2>Stay ahead of what matters</h2>
+      <p>
+        A simple system makes it easier to remember important dates and focus on what is
+        coming next.
+      </p>
+      <a class="button small-button" href="index.html">Back to home</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <p>PlanHub • WDD 131 Final Project</p>
+      <a href="index.html">Return home</a>
+    </div>
+  </footer>
+</body>
+</html>

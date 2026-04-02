@@ -11,15 +11,15 @@ if (menuButton && siteNav) {
 }
 
 // =========================
-// Quote Generator
+// Scripture Generator
 // =========================
 const quotes = [
-  "Clarity creates momentum.",
-  "Small systems can change everything.",
-  "A calm life is built on good habits.",
-  "Progress feels better than perfection.",
-  "Keep what matters. Let the rest be simple.",
-  "Consistency is a quiet form of confidence."
+  "And it came to pass that we lived afer the manner of happiness (2 Nephi 5:27)",
+  "Peace be unto thy soul; thine adversity and thine afflictions shall be but a small moment (D&C 121:7)",
+  "Learn of me, and listen to my words; walk in the meekness of my Spirit, and you shall have peace in me (D&C 12:23)",
+  "And the world passeth away, and the lust therof: but he that doeth the will of God abideth for ever (1 John 2:17)",
+  "And walk in love, as Christ also hath loved us, and hath given himself for us an offering and a sacrifice to God for a sweetsmelling savour (Ephesians 5:2)",
+  "If any man will come after me, let him deny himself and take up his cross , and follow me (Matthew 16:24)"
 ];
 
 const quoteText = document.querySelector("#quote-text");
@@ -137,28 +137,28 @@ if (recipeFilter) {
 // =========================
 const activities = [
   {
-    title: "Going on walks",
-    description: "A reset activity that helps clear my head and make the day feel lighter.",
-    type: "Reset"
+    title: "Going on a walk",
+    description: "You have never regretted going for a walk",
+    type: "Calm"
   },
   {
-    title: "Learning guitar",
-    description: "A creative activity that helps me slow down and focus on progress.",
+    title: "Practice Guitar",
+    description: "Find a new song and practice it until you have it down",
     type: "Creative"
   },
   {
     title: "Meal prep",
-    description: "A practical routine that makes the week feel more put together.",
-    type: "Routine"
+    description: "Future busy you will thank you",
+    type: "Healthy"
   },
   {
-    title: "Reading",
-    description: "A quiet way to recharge and spend time intentionally.",
-    type: "Calm"
+    title: "Scripture Study",
+    description: "Take a deeper dive into a topic you've been thinking about",
+    type: "Spiritual"
   },
   {
-    title: "Trying something new",
-    description: "Do something out of the ordinary that you haven't before.",
+    title: "Serve someone",
+    description: "Bake someone treats, clean the apartment, write a letter",
     type: "Fun"
   }
 ];
@@ -192,8 +192,8 @@ const todoInput = document.querySelector("#todo-input");
 const todoList = document.querySelector("#todo-list");
 
 let todos = JSON.parse(localStorage.getItem("planhub-todos")) || [
-  { id: 1, text: "Finish homework task", completed: false },
-  { id: 2, text: "Go on a walk", completed: true }
+  { id: 1, text: "Plan meals for the day", completed: false },
+  { id: 2, text: "Finish homeowork assignments due", completed: false}
 ];
 
 function saveTodos() {
@@ -314,8 +314,8 @@ const customInput = document.querySelector("#custom-input");
 const customList = document.querySelector("#custom-list");
 
 let customItems = JSON.parse(localStorage.getItem("planhub-custom-list")) || [
-  { id: 1, text: "Learn a new guitar riff", completed: false },
-  { id: 2, text: "Save 3 new dinner ideas", completed: false }
+  { id: 1, text: "Organize stuff to move out", completed: false },
+  { id: 2, text: "Sell unwanted items", completed: false }
 ];
 
 function saveCustomItems() {
@@ -430,20 +430,20 @@ const goalList = document.querySelector("#goal-list");
 let goals = JSON.parse(localStorage.getItem("planhub-goals")) || [
   {
     id: 1,
-    title: "Practice guitar consistently",
-    description: "Spend a little time each week learning songs and building skill.",
-    progress: 40
+    title: "Expand library of guitar songs",
+    description: "Learn 10 new guitar songs",
+    progress: 0
   },
   {
     id: 2,
-    title: "Build better weekly systems",
-    description: "Stay consistent with planning, task organization, and routines.",
+    title: "Save for Hawaii",
+    description: "Save up $1000 for the flights and food while you're there",
     progress: 65
   },
   {
     id: 3,
-    title: "Cook more meals at home",
-    description: "Use simple recipes and stay on top of meal prep.",
+    title: "Excersize more consistently",
+    description: "Add 10% for every week of consistent exersize (3 times per week)",
     progress: 50
   }
 ];
@@ -485,8 +485,8 @@ function renderGoals() {
       </div>
       <div class="goal-controls">
         <span><strong>${goal.progress}%</strong> complete</span>
-        <button class="goal-button" data-id="${goal.id}" data-change="-10" type="button">-10%</button>
-        <button class="goal-button" data-id="${goal.id}" data-change="10" type="button">+10%</button>
+        <button class="goal-button" data-id="${goal.id}" data-change="-5" type="button">-5%</button>
+        <button class="goal-button" data-id="${goal.id}" data-change="5" type="button">+5%</button>
       </div>
     `;
 
